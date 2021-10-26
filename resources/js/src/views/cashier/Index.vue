@@ -26,7 +26,7 @@
                 class="app-logo me-3"
               ></v-img>
               <v-slide-x-transition>
-                <h2 class="app-title text--primary">ViBes</h2>
+                <h2 class="app-title text--primary">ViBes POS</h2>
               </v-slide-x-transition>
             </router-link>
           </div>
@@ -63,7 +63,7 @@
           <card></card>
         </v-col>
         <v-col cols="12" md="4" sm="12">
-          <card></card>
+          <booking-summary></booking-summary>
         </v-col>
       </v-row>
     </div>
@@ -75,12 +75,14 @@ import { mdiMagnify, mdiBellOutline, mdiHomeOutline } from '@mdi/js'
 import ThemeSwitcher from '../../layouts/components/ThemeSwitcher.vue'
 import AppBarUserMenu from '../../layouts/components/AppBarUserMenu.vue'
 import Card from './components/Card.vue'
+import BookingSummary from './components/BookingSummary.vue'
 
 export default {
   components: {
     Card,
     AppBarUserMenu,
     ThemeSwitcher,
+    BookingSummary,
   },
   setup() {
     return {

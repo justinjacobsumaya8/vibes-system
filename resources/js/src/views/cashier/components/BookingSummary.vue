@@ -1,14 +1,15 @@
 <template>
   <div class="">
     <v-card>
-      
+      <v-card-title class="align-start">
+        <span class="subtitle-2 font-weight-bold">Booking Summary</span>
+        <v-spacer></v-spacer>
+
+      </v-card-title>
+
       <v-card-text class="my-7">
-        <span class="subtitle-2 font-weight-bold ">Payment Options</span>
-        <div class="cards mt-2">
-          <label v-bind:class="{ isActive: booking === 'Walk-in' }" v-for="(booking, index) in bookings" :key="index">
-            <input type="radio" v-model="form.booking" :value="booking" checked />
-            <span class="text">{{ booking }}</span>
-          </label>
+        <div class="cards">
+          
         </div>
       </v-card-text>
     </v-card>
