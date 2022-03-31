@@ -60,7 +60,7 @@
     <div class="inner">
       <v-row>
         <v-col cols="12" md="8" sm="12">
-          <card></card>
+          <booking-payment></booking-payment>
         </v-col>
         <v-col cols="12" md="4" sm="12">
           <booking-summary></booking-summary>
@@ -74,12 +74,12 @@
 import { mdiMagnify, mdiBellOutline, mdiHomeOutline } from '@mdi/js'
 import ThemeSwitcher from '../../layouts/components/ThemeSwitcher.vue'
 import AppBarUserMenu from '../../layouts/components/AppBarUserMenu.vue'
-import Card from './components/Card.vue'
+import BookingPayment from './components/BookingPayment.vue'
 import BookingSummary from './components/BookingSummary.vue'
 
 export default {
   components: {
-    Card,
+    BookingPayment,
     AppBarUserMenu,
     ThemeSwitcher,
     BookingSummary,

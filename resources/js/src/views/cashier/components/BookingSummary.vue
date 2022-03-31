@@ -1,15 +1,46 @@
 <template>
   <div class="">
     <v-card>
-      <v-card-title class="align-start">
-        <span class="subtitle-2 font-weight-bold">Booking Summary</span>
-        <v-spacer></v-spacer>
+      <v-card-title>
+        
+        <v-simple-table dense class="w-100">
+          <template v-slot:default>
+            <thead>
+              <tr>
+                <th class="text-uppercase">
+                  Subject
+                </th>
+                <th class="text-center text-uppercase">
+                  Quantity
+                </th>
+                <th class="text-center text-uppercase">
+                  Price
+                </th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in desserts"
+                :key="item.dessert"
+              >
+                <td>{{ item.dessert }}</td>
+                <td class="text-center">
+                  {{ item.calories }}
+                </td>
+                <td class="text-center">
+                  {{ item.fat }}
+                </td>
+              </tr>
+            </tbody>
+          </template>
+        </v-simple-table>
 
       </v-card-title>
 
       <v-card-text class="my-7">
         <div class="cards">
-          
+          <v-btn small color="primary"> Checkout </v-btn>
         </div>
       </v-card-text>
     </v-card>
@@ -37,8 +68,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+.w-100{
+  width: 100%;
+}
 .cards {
   display: flex;
 }
@@ -76,4 +109,5 @@ export default {
   border-color: var(--v-primary-base);
   background:var(--v-primary-base);
 }
+
 </style>

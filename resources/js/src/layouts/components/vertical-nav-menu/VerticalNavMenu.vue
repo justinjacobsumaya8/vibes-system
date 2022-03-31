@@ -21,7 +21,7 @@
           class="app-logo me-3"
         ></v-img>
         <v-slide-x-transition>
-          <h2 class="app-title text--primary">ViBe's</h2>
+          <h2 class="app-title text--primary">ViBes</h2>
         </v-slide-x-transition>
       </router-link>
     </div>
